@@ -41,9 +41,6 @@ const question = [
 ];
 
 program
-  .usage("Usage: webserver-cli start")
-  .command("start")
-  .alias("s")
   .description("在当前目录,启动本地WebServer服务, control + c 停止服务")
   .action(function () {
     inquirer.prompt(question).then((answer) => {
